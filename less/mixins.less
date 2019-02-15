@@ -10,3 +10,26 @@
   justify-content: center;
   align-items: center;
 }
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.button-creator(@font-size, @padding, @width) {
+  .border-radius(0px);
+  border: 1px solid @btn-border-color;
+  cursor: pointer;
+  font-size: @font-size;
+  padding: @padding;
+  width: @width;
+
+  @media @mobile {
+
+  }
+
+  &:hover {
+
+  }
+}
