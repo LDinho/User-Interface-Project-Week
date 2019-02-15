@@ -218,3 +218,11 @@ footer address .footer-heading {
   font-weight: 500;
   line-height: 1.2;
 }
+.container .project-title {
+  font-size: 2.6rem;
+  letter-spacing: 5px;
+  background-color: #D8D8D8;
+  padding: 26px;
+  text-align: center;
+  width: 260px;
+}
