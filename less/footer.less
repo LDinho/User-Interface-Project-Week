@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: @footer-bg;
 
   h2 {
@@ -21,6 +21,32 @@ footer {
     .footer-heading {
       .footer-heading;
     }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 4%;
+
+    h2 {
+      padding-bottom: unset;
+    }
+
+    .margin-btm-4 {
+      margin-bottom: 4%;
+    }
+
+    input {
+      color: @gray;
+      font-size: 1.6rem;
+      border: 1px;
+      border-radius: 4px;
+      height: 32%;
+      width: 100%;
+    }
+  }
+  .txt-center {
+    text-align: center;
   }
 
 }

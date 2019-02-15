@@ -222,32 +222,54 @@ img {
 .expanded .nav-item:hover {
   color: #222222;
 }
-footer {
+.footer {
   background-color: #828282;
 }
-footer h2 {
+.footer h2 {
   color: #FFFFFF;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.2;
 }
-footer p {
+.footer p {
   color: #FFFFFF;
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.9;
 }
-footer address {
+.footer address {
   color: #FFFFFF;
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.9;
 }
-footer address .footer-heading {
+.footer address .footer-heading {
   color: #FFFFFF;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.2;
+}
+.footer .footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 4%;
+}
+.footer .footer-wrapper h2 {
+  padding-bottom: unset;
+}
+.footer .footer-wrapper .margin-btm-4 {
+  margin-bottom: 4%;
+}
+.footer .footer-wrapper input {
+  color: #828282;
+  font-size: 1.6rem;
+  border: 1px;
+  border-radius: 4px;
+  height: 32%;
+  width: 100%;
+}
+.footer .txt-center {
+  text-align: center;
 }
 .container .header {
   background-image: url("../img/home/home-jumbotron.png");
@@ -262,7 +284,13 @@ footer address .footer-heading {
   position: absolute;
   top: 54.1%;
 }
+.container .content-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 8%;
+}
 .container .img-right .architect-wrapper {
+  padding-right: 2%;
   width: 50%;
 }
 .container .img-right .architect-wrapper h2 {
@@ -278,16 +306,39 @@ footer address .footer-heading {
   border: 1px solid #222222;
   cursor: pointer;
   font-size: 1.6rem;
-  padding: 3%;
-  width: 30%;
+  padding: 4%;
+  width: 33%;
 }
 .container .img-right img {
+  padding-left: 2%;
   width: 50%;
 }
-.container .content-wrapper {
-  display: flex;
-  align-items: center;
-  padding: 8%;
+.container .img-left {
+  flex-direction: row-reverse;
+}
+.container .img-left .futuristic-wrapper {
+  padding-left: 2%;
+  width: 50%;
+}
+.container .img-left .futuristic-wrapper h2 {
+  margin-bottom: 3%;
+}
+.container .img-left .futuristic-wrapper p {
+  margin-bottom: 4%;
+}
+.container .img-left .futuristic-wrapper button {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: 1px solid #222222;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 4%;
+  width: 33%;
+}
+.container .img-left img {
+  padding-right: 2%;
+  width: 50%;
 }
 .container .project-title {
   font-size: 2.6rem;

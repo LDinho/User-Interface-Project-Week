@@ -16,8 +16,15 @@
     }
   }
 
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 8%;
+  }
+
   .img-right {
     .architect-wrapper {
+      padding-right: 2%;
       width: 50%;
 
       h2 {
@@ -29,25 +36,41 @@
       }
 
       button {
-        .button-creator(1.6rem, 3%, 30%);
-        //border: 1px solid;
-        //font-size: 1.6rem;
-        //padding: 3%;
-        //width: 30%;
-        //cursor: pointer;
+        .button-creator(1.6rem, 4%, 33%);
       }
     }
 
     img {
+      padding-left: 2%;
       width: 50%;
     }
   } // First Section
 
-  .content-wrapper {
-    display: flex;
-    align-items: center;
-    padding: 8%;
-  }
+  .img-left {
+    flex-direction: row-reverse;
+
+    .futuristic-wrapper {
+      padding-left: 2%;
+      width: 50%;
+
+      h2 {
+        margin-bottom: 3%;
+      }
+
+      p {
+        margin-bottom: 4%;
+      }
+
+      button {
+        .button-creator(1.6rem, 4%, 33%);
+      }
+    }
+
+    img {
+      padding-right: 2%;
+      width: 50%;
+    }
+  } // Second Section
 
   .project-title {
     font-size: 2.6rem;
