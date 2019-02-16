@@ -192,12 +192,12 @@ img {
   margin: 0 auto;
 }
 .nav-collapsed {
-  left: 50%;
-  transform: translate(-50%, 0);
   background-color: #98A4AF;
   height: 50px;
   position: fixed;
   top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   width: 100vw;
   z-index: 1;
 }
@@ -285,7 +285,7 @@ img {
 .footer .footer-wrapper {
   display: flex;
   justify-content: space-around;
-  padding: 4%;
+  padding: 4% 12% 2% 12%;
 }
 .footer .footer-wrapper h2 {
   padding-bottom: unset;
@@ -318,10 +318,12 @@ img {
   position: absolute;
   top: 54.1%;
 }
+.container .main-content {
+  padding: 5% 8%;
+}
 .container .content-wrapper {
   display: flex;
   align-items: center;
-  padding: 8%;
 }
 .container .img-right .architect-wrapper {
   padding-right: 2%;
