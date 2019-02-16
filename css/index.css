@@ -325,6 +325,7 @@ img {
 .container .content-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 12%;
 }
 .container .img-right .architect-wrapper {
   padding-right: 2%;
@@ -381,11 +382,30 @@ img {
   padding-right: 2%;
   width: 50%;
 }
+.container .projects-wrapper h2 {
+  margin-bottom: 5%;
+}
+.container .projects-wrapper .projects-image {
+  position: relative;
+}
+.container .projects-wrapper .projects-image .project-title-left {
+  left: auto;
+}
+.container .projects-wrapper .projects-content {
+  width: 46%;
+  margin: 10% auto;
+}
+.container .projects-wrapper .projects-content p {
+  margin-bottom: 2%;
+}
 .container .project-title {
   font-size: 2.6rem;
   letter-spacing: 5px;
   background-color: #D8D8D8;
-  padding: 26px;
+  padding: 30px;
   text-align: center;
-  width: 260px;
+  width: 37%;
+  position: absolute;
+  left: 62.4%;
+  top: 79%;
 }
