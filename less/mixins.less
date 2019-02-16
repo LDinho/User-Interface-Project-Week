@@ -17,10 +17,12 @@
   border-radius: @radius;
 }
 
-.button-creator(@font-size, @padding, @width) {
+.button-creator(@bg-color, @font-color, @font-size, @padding, @width) {
   .border-radius(0px);
   border: 1px solid @btn-border-color;
   cursor: pointer;
+  background-color: @bg-color;
+  color: @font-color;
   font-size: @font-size;
   padding: @padding;
   width: @width;

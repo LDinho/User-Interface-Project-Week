@@ -151,6 +151,7 @@ html {
 }
 html,
 body {
+  color: #222222;
   font-family: 'Roboto', sans-serif;
 }
 h1,
@@ -341,6 +342,8 @@ img {
   border-radius: 0px;
   border: 1px solid #222222;
   cursor: pointer;
+  background-color: #FFFFFF;
+  color: #222222;
   font-size: 1.6rem;
   padding: 4%;
   width: 33%;
@@ -368,6 +371,8 @@ img {
   border-radius: 0px;
   border: 1px solid #222222;
   cursor: pointer;
+  background-color: #FFFFFF;
+  color: #222222;
   font-size: 1.6rem;
   padding: 4%;
   width: 33%;
