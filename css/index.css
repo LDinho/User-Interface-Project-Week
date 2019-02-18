@@ -318,7 +318,7 @@ img {
   background-image: url("../img/home/home-jumbotron.png");
   height: 598px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   position: relative;
   margin-top: 50px;
@@ -358,7 +358,7 @@ img {
   padding: 4%;
   width: 33%;
 }
-.container .img-right img {
+.container .img-right picture {
   padding-left: 2%;
   width: 50%;
 }
@@ -387,7 +387,7 @@ img {
   padding: 4%;
   width: 33%;
 }
-.container .img-left img {
+.container .img-left picture {
   padding-right: 2%;
   width: 50%;
 }
