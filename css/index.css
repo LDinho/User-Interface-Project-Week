@@ -236,7 +236,7 @@ img {
   align-items: center;
   justify-content: center;
   z-index: 1;
-  position: absolute;
+  position: fixed;
   opacity: 0.9;
   background-color: #98A4AF;
   top: 0;
