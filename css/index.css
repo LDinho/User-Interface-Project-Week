@@ -522,3 +522,37 @@ img {
   background-image: url("../img/services/services-jumbotron.png");
   height: 300px;
 }
+.container .top-text-services {
+  margin-bottom: 4%;
+}
+.container .content-wrapper-services {
+  margin-top: 6%;
+}
+.container .architect-wrapper-services {
+  width: 100%;
+}
+.container .architect-wrapper-services p {
+  margin-top: 4%;
+}
+.container .picture-services {
+  width: 100%;
+  padding: 2%;
+}
+.container .picture-services img {
+  width: 100%;
+}
+.container .tabs {
+  display: flex;
+  justify-content: space-between;
+}
+.container .tabs .tab {
+  width: 21%;
+  border: 1px solid black;
+  text-align: center;
+  padding: 1.4%;
+}
+.container .tabs .tab h3 {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
