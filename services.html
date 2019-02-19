@@ -1,38 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Services</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/index.css">
-	<!--[if IE]>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Services</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/index.css">
+		<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
+		<![endif]-->
+	</head>
 
-<body>
+	<body>
+		<div class="container">
+			<!-- Menu Content -->
+			<nav class="nav-collapsed">
+				<div class="nav-inner container">
+					<a class="nav-item logo" href="index.html">S&J</a>
+					<div>
+						<img src="img/nav-hamburger.png" alt="open icon" />
+					</div>
+				</div>
+			</nav>
 
-	<h1>Services</h1>
+			<nav class="nav-expanded">
+				<a class="nav-item logo" href="">S&J</a>
+				<img class="icon-close" src="img/nav-hamburger-close.png" alt="close icon" />
+				<a class="nav-item" href="index.html">Home</a>
+				<a class="nav-item" href="services.html">Services</a>
+				<a class="nav-item" href="">Contact</a>
+			</nav>
+			<!-- Services Content -->
+			<header class="header header-services">
+				<div class="header-wrapper">
+					<h1>Services</h1>
+				</div>
+			</header>
+			<main class="main-content">
 
-<!-- Services Content 
-  Services
-  
-  Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
--->
+				<section>
+					<p>Services include: completely synergize resource taxing relationships
+						via premier niche markets. Professionally cultivate one-to-one customer service with
+						robust ideas. Dynamically innovate resource-leveling customer service
+						for state of the art customer service.
+					</p>
+				</section>
 
-<!-- *** NOTE *** Tab Navigator Content: I used the same text for each tab to make it easy, Note that the images and text do change on click but you can just use the same text for each tab element.  All the images should be in the img folder.
+				<section class="tabs">
+					<div class="tab"><h2>Pre-Construction</h2></div>
+					<div class="tab">Construction</div>
+					<div class="tab">Design Build</div>
+					<div class="tab">Sustainability</div>
+				</section>
 
-  Pre-Construction
-  Construction
-  Design Build
-  Sustainability
+				<section class="content-wrapper">
+					<div class="architect-wrapper">
+						<h2>Pre-Construction</h2>
+						<p>
+							Completely synergize resource taxing relationships via premier niche markets.
+							Professionally cultivate one-to-one customer service with robust ideas.
+							Dynamically innovate resource-leveling customer service for state of the
+							art customer service.  
+						</p>
+						<p>
+							Phosfluorescently engage worldwide methodologies with web-enabled technology.
+							Interactively coordinate proactive e-commerce via process-centric
+							"outside the box" thinking. Completely pursue scalable
+							customer service through sustainable potentialities.
+						</p>
+					</div>
 
-  Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.  Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+					<picture>
+						<source media="(min-width: 800px)"
+										srcset="img/services/services-tab-pre-construction-img.png"
+						/>
+						<img src="img/services/services-tab-mobile-pre-construction-img.png"
+								 alt="pre-construction image" />
+					</picture>
+				</section>
 
+			</main>
+		</div>
 
+		<footer class="footer">
+			<div class="footer-wrapper">
+				<div>
+					<h2>Interested in starting a project?</h2>
+					<h2 class="margin-btm-4">Let’s talk:</h2>
 
--->
+					<input class="email-submit" type="text" value="Enter email" >
 
-	<script src="js/index.js"></script>
-</body>
+					<p>We'll never share your email with anyone else.</p>
+				</div>
+				<address>
+					<div class="footer-heading">New York</div>
+
+					123 Lane <br />
+					Suite 100 <br />
+					Albany, NY 12345 <br />
+					202 555 0144
+				</address>
+				<address>
+					<div class="footer-heading">Florida</div>
+
+					Ocean Drive <br />
+					Suite 201 <br />
+					Orlando, FL 22345 <br />
+					502 555 0144
+				</address>
+				<address>
+					<div class="footer-heading">California</div>
+
+					Mountain Street<br />
+					Suite 105<br />
+					San Diego, CA 22345<br />
+					702 555 0144
+				</address>
+			</div>
+			<div class="txt-center">
+				<p>Copyright © 2018 Smith and Jones</p>
+			</div>
+		</footer>
+
+		<script src="js/index.js"></script>
+	</body>
 </html>
