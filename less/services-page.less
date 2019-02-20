@@ -16,6 +16,7 @@
 
   .architect-wrapper-services {
     width: 100%;
+    padding-right: 1%;
 
     p {
       margin-top: 4%;
@@ -25,30 +26,39 @@
 
   .picture-services {
     width: 100%;
-    padding: 2%;
+    padding-left: 1%;
 
     img {
       width: 100%;
     }
   }
 
-  .tabs {
+  .tab-list {
     display: flex;
     justify-content: space-between;
 
-    .tab {
-      width: 21%;
-      border: 1px solid black;
-      text-align: center;
-      padding: 1.4%;
+  }
 
-      h3 {
-        color: black;
-        font-size: 1.6rem;
-        font-weight: 700;
+  .tab {
+    color: @nero;
+    cursor: pointer;
+    border: 1px solid @nero;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.4%;
+    width: 21%;
 
-      }
+    &:hover {
+      background-color: @nero;
+      color: @white;
 
     }
   }
 } // Services page
+/*
+Services Page
+Tab selected background: #5E9FB9
+Tab Hover background: #222222
+Tab Hover color: #FFF;
+*/
