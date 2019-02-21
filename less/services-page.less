@@ -12,6 +12,7 @@
 
   .content-wrapper-services {
     margin-top: 6%;
+    margin-bottom: 4%;
   }
 
   .architect-wrapper-services {
@@ -31,6 +32,10 @@
     img {
       width: 100%;
     }
+  }
+
+  .tab-content-hidden {
+    display: none;
   }
 
   .tab-list {
@@ -54,11 +59,10 @@
       color: @white;
 
     }
+
+    &.selected-tab {
+      background-color: @shakespeare;
+      color: @white;
+    }
   }
 } // Services page
-/*
-Services Page
-Tab selected background: #5E9FB9
-Tab Hover background: #222222
-Tab Hover color: #FFF;
-*/

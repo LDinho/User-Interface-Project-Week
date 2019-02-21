@@ -517,6 +517,7 @@ img {
 }
 .container .content-wrapper-services {
   margin-top: 6%;
+  margin-bottom: 4%;
 }
 .container .architect-wrapper-services {
   width: 100%;
@@ -531,6 +532,9 @@ img {
 }
 .container .picture-services img {
   width: 100%;
+}
+.container .tab-content-hidden {
+  display: none;
 }
 .container .tab-list {
   display: flex;
@@ -550,9 +554,7 @@ img {
   background-color: #222222;
   color: #FFFFFF;
 }
-/*
-Services Page
-Tab selected background: #5E9FB9
-Tab Hover background: #222222
-Tab Hover color: #FFF;
-*/
+.container .tab.selected-tab {
+  background-color: #5E9FB9;
+  color: #FFFFFF;
+}

@@ -47,13 +47,13 @@
 				</section>
 
 				<section class="tab-list" role="tablist">
-					<div class="tab" role="tab">Pre-Construction</div>
-					<div class="tab" role="tab">Construction</div>
-					<div class="tab" role="tab">Design Build</div>
-					<div class="tab" role="tab">Sustainability</div>
+					<div class="tab selected-tab" role="tab" data-tab="pre-construction">Pre-Construction</div>
+					<div class="tab" role="tab" data-tab="construction">Construction</div>
+					<div class="tab" role="tab" data-tab="design-build">Design Build</div>
+					<div class="tab" role="tab" data-tab="sustainability">Sustainability</div>
 				</section>
 
-				<section class="content-wrapper content-wrapper-services">
+				<section class="content-wrapper content-wrapper-services" data-tab="pre-construction">
 					<div class="architect-wrapper architect-wrapper-services">
 						<h2>Pre-Construction</h2>
 						<p>
@@ -75,6 +75,84 @@
 										srcset="img/services/services-tab-pre-construction-img.png"
 						/>
 						<img src="img/services/services-tab-mobile-pre-construction-img.png"
+								 alt="pre-construction image" />
+					</picture>
+				</section>
+
+				<section class="content-wrapper content-wrapper-services tab-content-hidden" data-tab="construction">
+					<div class="architect-wrapper architect-wrapper-services">
+						<h2>Construction</h2>
+						<p>
+							Completely synergize resource taxing relationships via premier niche markets.
+							Professionally cultivate one-to-one customer service with robust ideas.
+							Dynamically innovate resource-leveling customer service for state of the
+							art customer service.  
+						</p>
+						<p>
+							Phosfluorescently engage worldwide methodologies with web-enabled technology.
+							Interactively coordinate proactive e-commerce via process-centric
+							"outside the box" thinking. Completely pursue scalable
+							customer service through sustainable potentialities.
+						</p>
+					</div>
+
+					<picture class="picture-services">
+						<source media="(min-width: 800px)"
+										srcset="img/services/services-tab-construction-img.png"
+						/>
+						<img src="img/services/services-tab-mobile-construction-img.png"
+								 alt="pre-construction image" />
+					</picture>
+				</section>
+
+				<section class="content-wrapper content-wrapper-services tab-content-hidden" data-tab="design-build">
+					<div class="architect-wrapper architect-wrapper-services">
+						<h2>Design Build</h2>
+						<p>
+							Completely synergize resource taxing relationships via premier niche markets.
+							Professionally cultivate one-to-one customer service with robust ideas.
+							Dynamically innovate resource-leveling customer service for state of the
+							art customer service.  
+						</p>
+						<p>
+							Phosfluorescently engage worldwide methodologies with web-enabled technology.
+							Interactively coordinate proactive e-commerce via process-centric
+							"outside the box" thinking. Completely pursue scalable
+							customer service through sustainable potentialities.
+						</p>
+					</div>
+
+					<picture class="picture-services">
+						<source media="(min-width: 800px)"
+										srcset="img/services/services-tab-design-build-img.png"
+						/>
+						<img src="img/services/services-tab-mobile-design-build-img.png"
+								 alt="pre-construction image" />
+					</picture>
+				</section>
+
+				<section class="content-wrapper content-wrapper-services tab-content-hidden" data-tab="sustainability">
+					<div class="architect-wrapper architect-wrapper-services">
+						<h2>Sustainability</h2>
+						<p>
+							Completely synergize resource taxing relationships via premier niche markets.
+							Professionally cultivate one-to-one customer service with robust ideas.
+							Dynamically innovate resource-leveling customer service for state of the
+							art customer service.  
+						</p>
+						<p>
+							Phosfluorescently engage worldwide methodologies with web-enabled technology.
+							Interactively coordinate proactive e-commerce via process-centric
+							"outside the box" thinking. Completely pursue scalable
+							customer service through sustainable potentialities.
+						</p>
+					</div>
+
+					<picture class="picture-services">
+						<source media="(min-width: 800px)"
+										srcset="img/services/services-tab-sustainability-img.png"
+						/>
+						<img src="img/services/services-tab-mobile-sustainability-img.png"
 								 alt="pre-construction image" />
 					</picture>
 				</section>
@@ -124,5 +202,6 @@
 
 		<script src="js/index.js"></script>
 		<script src="./js/Components/Navigation/navigation.js"></script>
+		<script src="./js/Components/Services/Tabs/tabs.js"></script>
 	</body>
 </html>
