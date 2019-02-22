@@ -1,0 +1,68 @@
+.container {
+
+  .header-contact {
+    background-image: url("../img/contact/contact-jumbotron.png");
+    height: 300px;
+    margin-top: unset;
+
+    @media @mobile {
+      background-image: url("../img/contact/contact-mobile-jumbotron.png");
+    }
+  }
+
+  .header-wrapper {
+
+    &.header-wrapper-contact {
+      top: 65%;
+    }
+  }
+
+  .contact-content {
+    display: flex;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+
+    button {
+      .button-creator(@white, @nero, 1.8rem, 2%, 25%);
+      margin-top: 4%;
+
+      @media @mobile {
+        font-size: 2rem;
+        width: 100%;
+      }
+    }
+
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+
+    &.contact-wrapper-form {
+      width: 90%;
+    }
+  }
+
+  .contact-wrapper-mg-left {
+    margin-left: 8%;
+  }
+
+  .contact-heading {
+    color: @nero;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .contact-address {
+    color: @nero;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-top: 8%;
+  }
+
+}

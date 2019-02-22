@@ -592,3 +592,67 @@ img {
   background-color: #5E9FB9;
   color: #FFFFFF;
 }
+.container .header-contact {
+  background-image: url("../img/contact/contact-jumbotron.png");
+  height: 300px;
+  margin-top: unset;
+}
+@media (max-width: 800px) {
+  .container .header-contact {
+    background-image: url("../img/contact/contact-mobile-jumbotron.png");
+  }
+}
+.container .header-wrapper.header-wrapper-contact {
+  top: 65%;
+}
+.container .contact-content {
+  display: flex;
+}
+@media (max-width: 800px) {
+  .container .contact-content {
+    flex-direction: column;
+  }
+}
+.container .contact-content button {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: 1px solid #222222;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #222222;
+  font-size: 1.8rem;
+  padding: 2%;
+  width: 25%;
+  margin-top: 4%;
+}
+@media (max-width: 800px) {
+  .container .contact-content button {
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+.container .contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.container .contact-wrapper.contact-wrapper-form {
+  width: 90%;
+}
+.container .contact-wrapper-mg-left {
+  margin-left: 8%;
+}
+.container .contact-heading {
+  color: #222222;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.container .contact-address {
+  color: #222222;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.9;
+  margin-top: 8%;
+}
