@@ -39,15 +39,52 @@
   .contact-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 45%;
 
     &.contact-wrapper-form {
+      color: #222222;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.9;
       width: 90%;
+
+      input {
+        border-radius: 4px;
+        border: 1px solid #82828282;
+        padding: 2.5%;
+        font-size: 1.4rem;
+        color: #82828282;
+      }
+
+      p {
+        margin-bottom: 3%;
+        color: #82828282;
+        font-size: 1.5rem;
+      }
     }
   }
 
+  .contact-select {
+    background-color: @white;
+    border-radius: 4px;
+    border: 1px solid #82828282;
+    font-size: 1.6rem;
+    height: 8%;
+    margin-bottom: 8%;
+
+  }
+
+  .contact-textarea {
+    border-radius: 4px;
+    border: 1px solid #82828282;
+    font-size: 1.6rem;
+    margin-bottom: 8%;
+
+  }
+
   .contact-wrapper-mg-left {
-    margin-left: 8%;
+    margin-left: 20%;
   }
 
   .contact-heading {
@@ -59,7 +96,7 @@
 
   .contact-address {
     color: @nero;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.9;
     margin-top: 8%;
