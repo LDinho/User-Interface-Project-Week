@@ -645,12 +645,17 @@ img {
   line-height: 1.9;
   width: 90%;
 }
+@media (max-width: 800px) {
+  .container .contact-wrapper.contact-wrapper-form {
+    width: auto;
+  }
+}
 .container .contact-wrapper.contact-wrapper-form input {
   border-radius: 4px;
   border: 1px solid #82828282;
   padding: 2.5%;
   font-size: 1.4rem;
-  color: #82828282;
+  color: #222222;
 }
 .container .contact-wrapper.contact-wrapper-form p {
   margin-bottom: 3%;
@@ -674,6 +679,23 @@ img {
 .container .contact-wrapper-mg-left {
   margin-left: 20%;
 }
+@media (max-width: 800px) {
+  .container .contact-wrapper-mg-left {
+    margin-left: unset;
+    margin-top: 8%;
+    width: auto;
+  }
+}
+@media (max-width: 924px) {
+  .container .contact-wrapper-mg-left {
+    margin-left: 8%;
+  }
+}
+@media (max-width: 801px) {
+  .container .contact-wrapper-mg-left {
+    margin-left: unset;
+  }
+}
 .container .contact-heading {
   color: #222222;
   font-size: 2rem;
@@ -686,4 +708,9 @@ img {
   font-weight: 400;
   line-height: 1.9;
   margin-top: 8%;
+}
+@media (max-width: 800px) {
+  .container .contact-address {
+    margin-top: 4%;
+  }
 }
