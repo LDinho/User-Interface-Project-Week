@@ -209,7 +209,10 @@ img {
   cursor: pointer;
 }
 .nav-expanded {
-  display: none;
+  visibility: hidden;
+  position: fixed;
+  opacity: 0;
+  transition: visibility 0s linear 0s, opacity 850ms;
 }
 .expanded {
   overflow: hidden;
@@ -226,13 +229,13 @@ img {
   align-items: center;
   justify-content: center;
   z-index: 1;
-  position: fixed;
-  opacity: 0.9;
   background-color: #98A4AF;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  visibility: visible;
+  opacity: 0.9;
 }
 .expanded .nav-item {
   color: #FFFFFF;
@@ -587,6 +590,7 @@ img {
 .container .tab:hover {
   background-color: #222222;
   color: #FFFFFF;
+  transition: background-color 1807ms ease 0ms;
 }
 .container .tab.selected-tab {
   background-color: #5E9FB9;

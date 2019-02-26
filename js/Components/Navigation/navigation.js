@@ -13,7 +13,10 @@ class Menu {
 
         // Add a click handler to the hamburger/close icons and call the toggleContent method.
         openIcon.addEventListener('click', () => this.toggleContent());
-        closeIcon.addEventListener('click', () => this.toggleContent());
+        closeIcon.addEventListener('click', () => {
+            // expandedMenuElement.classList.add('fadeOut');
+            this.toggleContent()
+        });
     }
 
     toggleContent() {
