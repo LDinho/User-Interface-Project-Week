@@ -1,0 +1,95 @@
+.container {
+
+  .header-services {
+    background-image: url("../img/services/services-jumbotron.png");
+    height: 300px;
+
+    @media @mobile {
+      background-image: url("../img/services/services-mobile-jumbotron.png");
+    }
+  }
+
+  .top-text-services {
+    margin-bottom: 4%;
+  }
+
+  .content-wrapper-services {
+    margin-top: 6%;
+    margin-bottom: 4%;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+  }
+
+  .architect-wrapper-services {
+    width: 100%;
+    padding-right: 1%;
+
+    @media @mobile {
+      padding-right: unset;
+      margin-bottom: 4%;
+    }
+
+    p {
+      margin-top: 4%;
+    }
+
+  }
+
+  .picture-services {
+    width: 100%;
+    padding-left: 1%;
+
+    @media @mobile {
+      padding-left: unset;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .tab-content-hidden {
+    display: none;
+  }
+
+  .tab-list {
+    display: flex;
+    justify-content: space-between;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+
+  }
+
+  .tab {
+    color: @nero;
+    cursor: pointer;
+    border: 1px solid @nero;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.4%;
+    width: 21%;
+
+    @media @mobile {
+      font-size: 2rem;
+      padding: 4%;
+      margin-bottom: 3%;
+      width: auto;
+    }
+
+    &:hover {
+      background-color: @nero;
+      color: @white;
+      transition: background-color 1807ms ease 0ms;
+    }
+
+    &.selected-tab {
+      background-color: @shakespeare;
+      color: @white;
+    }
+  }
+} // Services page

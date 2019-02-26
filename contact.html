@@ -1,61 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Contact Us</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/index.css">
-	<!--[if IE]>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Us</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/index.css">
+		<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
+		<![endif]-->
+	</head>
 
-<body>
+	<body>
+		<div class="container">
+			<!-- Menu Content -->
 
-	<h1>Contact</h1>
+			<nav class="nav-collapsed">
+				<div class="nav-inner container">
+					<a class="nav-item logo" href="index.html">S&J</a>
+					<div>
+						<img id="open-icon" src="img/nav-hamburger.png" alt="open icon" />
+					</div>
+				</div>
+			</nav>
 
-<!-- Contactd Us Content 
-  Contact Us
-  
-Get In Touch
+			<nav class="nav-expanded">
+				<a class="nav-item logo" href="index.html">S&J</a>
+				<img class="icon-close" src="img/nav-hamburger-close.png" alt="close icon" />
+				<a class="nav-item" href="index.html">Home</a>
+				<a class="nav-item" href="services.html">Services</a>
+				<a class="nav-item" href="contact.html">Contact</a>
+			</nav>
 
-Email Address
-Enter Email
-We'll never share your email with anyone else.
+			<!-- Contact Content -->
 
-How many buildings do you need planned?
-1-5
+			<header class="header header-contact">
+				<div class="header-wrapper header-wrapper-contact">
+					<h1>Contact Us</h1>
+				</div>
+			</header>
+			<main class="main-content">
 
-Provide a brief overview of your project needs:
+				<section class="contact-content" >
+					<form class="contact-wrapper contact-wrapper-form">
+						<h2>Get in Touch</h2>
 
-I am a small business
-I am a residential owner
-I am a corporation
+						<label for="email">Email address</label>
+						<input class="email"
+									 id="email"
+									 type="text"
+									 name="email"
+									 placeholder="Enter email">
+						<p>We'll never share your email with anyone else.</p>
 
-Submit
+						<label for="buildings-number">How many buildings do you need planned?</label>
+						<select class="contact-select" id="buildings-number">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
 
-Where We Work
+						<label for="text-area">Provide a brief overview of your project needs:</label>
+						<textarea class="contact-textarea" id="text-area" rows="12" cols="50"></textarea>
 
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
+						<label for="small">
+							<input type="radio"
+										 name="business-type"
+										 id="small"
+										 value="small-business">
+							I am a small business
+						</label>
 
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
+						<label for="residential">
+							<input type="radio"
+										 name="business-type"
+										 id="residential"
+										 value="residential">
+							I am a residential owner
+						</label>
 
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
+						<label for="corporation">
+							<input type="radio"
+										 name="business-type"
+										 id="corporation"
+										 value="corporation">
+							I am a corporation
+						</label>
 
--->
+						<button>Submit</button>
+					</form>
 
-	<script src="js/index.js"></script>
-</body>
+					<div class="contact-wrapper contact-wrapper-mg-left">
+						<h2>Where We Work</h2>
+						<address class="contact-address">
+							<div class="contact-heading">New York</div>
+
+							123 Lane <br />
+							Suite 100 <br />
+							Albany, NY 12345 <br />
+							202 555 0144
+						</address>
+						<address class="contact-address">
+							<div class="contact-heading">Florida</div>
+
+							Ocean Drive <br />
+							Suite 201 <br />
+							Orlando, FL 22345 <br />
+							502 555 0144
+						</address>
+						<address class="contact-address">
+							<div class="contact-heading">California</div>
+
+							Mountain Street<br />
+							Suite 105<br />
+							San Diego, CA 22345<br />
+							702 555 0144
+						</address>
+					</div>
+				</section>
+
+			</main>
+		</div>
+
+		<footer class="footer">
+		<div class="footer-wrapper">
+			<div>
+				<h2>Interested in starting a project?</h2>
+				<h2 class="margin-btm-4">Let’s talk:</h2>
+
+				<input class="email-submit" type="text" value="Enter email" >
+
+				<p>We'll never share your email with anyone else.</p>
+			</div>
+			<address>
+				<div class="contact-heading">New York</div>
+
+				123 Lane <br />
+				Suite 100 <br />
+				Albany, NY 12345 <br />
+				202 555 0144
+			</address>
+			<address>
+				<div class="contact-heading">Florida</div>
+
+				Ocean Drive <br />
+				Suite 201 <br />
+				Orlando, FL 22345 <br />
+				502 555 0144
+			</address>
+			<address>
+				<div class="contact-heading">California</div>
+
+				Mountain Street<br />
+				Suite 105<br />
+				San Diego, CA 22345<br />
+				702 555 0144
+			</address>
+		</div>
+		<div class="txt-center">
+			<p>Copyright © 2018 Smith and Jones</p>
+		</div>
+		</footer>
+
+		<script src="js/index.js"></script>
+		<script src="./js/Components/Navigation/navigation.js"></script>
+		<script src="./js/Components/Services/Tabs/tabs.js"></script>
+	</body>
 </html>

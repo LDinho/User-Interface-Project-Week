@@ -1,0 +1,192 @@
+.container {
+
+  .header {
+    background-image: url("../img/home/home-jumbotron.png");
+    height: 598px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: @nav-height;
+
+    @media @mobile {
+      background-image: url("../img/home/home-mobile-jumbotron.png");
+    }
+
+    .header-wrapper {
+      margin-left: 8%;
+      position: absolute;
+      top: 54.1%;
+    }
+  }
+
+  .main-content {
+    padding: 5% 8%;
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12%;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .img-right {
+    .architect-wrapper {
+      padding-right: 2%;
+      width: 50%;
+
+      @media @mobile {
+        margin-top: 4%;
+        padding-right: unset;
+        width: 100%;
+      }
+
+      h2 {
+        margin-bottom: 3%;
+      }
+
+      p {
+        margin-bottom: 4%;
+      }
+
+      button {
+        .button-creator(@white, @nero, 1.6rem, 4%, 33%);
+
+        @media @mobile {
+          font-size: 2rem;
+          width: 100%;
+        }
+      }
+    }
+
+    picture {
+      padding-left: 2%;
+      width: 50%;
+
+      @media @mobile {
+        padding-left: unset;
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+  } // First Section
+
+  .img-left {
+    flex-direction: row-reverse;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
+
+    .futuristic-wrapper {
+      padding-left: 2%;
+      width: 50%;
+
+      @media @mobile {
+        margin-top: 4%;
+        padding-left: unset;
+        width: 100%;
+      }
+
+      h2 {
+        margin-bottom: 3%;
+      }
+
+      p {
+        margin-bottom: 4%;
+      }
+
+      button {
+        .button-creator(@white, @nero, 1.6rem, 4%, 33%);
+
+        @media @mobile {
+          font-size: 2rem;
+          width: 100%;
+        }
+      }
+    }
+
+    picture {
+      padding-right: 2%;
+      width: 50%;
+
+      @media @mobile {
+        padding-right: unset;
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+  } // Second Section
+
+  .projects-wrapper {
+
+    h2 {
+      margin-bottom: 5%;
+    }
+
+    .projects-image {
+      position: relative;
+
+      @media @mobile {
+        img {
+          width: 100%;
+        }
+
+      }
+
+      .project-title-left {
+        left: auto;
+
+        @media @mobile {
+          left: 3.5%;
+        }
+      }
+    }
+
+    .projects-content {
+      width: 46%;
+      margin: 10% auto;
+
+      @media @mobile {
+        width: auto;
+        margin: 4% auto 4% auto;
+      }
+
+      p {
+        margin-bottom: 2%;
+      }
+    }
+
+  }
+
+  .project-title {
+    font-size: 2.6rem;
+    letter-spacing: 5px;
+    background-color: @gray-sq;
+    padding: 30px;
+    text-align: center;
+    width: 37%;
+    position: absolute;
+    left: 62.4%;
+    top: 79%;
+
+    @media @mobile {
+      position: relative;
+      width: 93%;
+      left: 3.5%;
+      bottom: 18px;
+    }
+  }
+}//Home page

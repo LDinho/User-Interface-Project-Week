@@ -1,0 +1,37 @@
+.footer-heading() {
+  color: @white;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.button-creator(@bg-color, @font-color, @font-size, @padding, @width) {
+  .border-radius(0px);
+  border: 1px solid @btn-border-color;
+  cursor: pointer;
+  background-color: @bg-color;
+  color: @font-color;
+  font-size: @font-size;
+  padding: @padding;
+  width: @width;
+
+  @media @mobile {
+
+  }
+
+  &:hover {
+
+  }
+}
